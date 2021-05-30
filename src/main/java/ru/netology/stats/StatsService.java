@@ -24,10 +24,7 @@ public class StatsService {
     }
 
     public int calculateAvSum(long[] sales) {
-        int sum = 0;
-        for (long sale : sales) {
-            sum += sale;
-        }
+        int sum = calculateSum(sales);
         return sum / sales.length;
     }
 
